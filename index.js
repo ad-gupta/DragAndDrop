@@ -27,14 +27,32 @@ let draggedItem;
         let container1 = document.getElementById("container1");
         let container2 = document.getElementById("container2");
         container1.innerHTML = `<div class="item" draggable="true" ondragstart="drag(event)">
-                                <img src="path_to_image1.jpg" alt="Image 1">
-                              </div>
-                              <div class="item" draggable="true" ondragstart="drag(event)">
-                                <span>Text 1</span>
-                              </div>
-                              <div class="item" draggable="true" ondragstart="drag(event)">
-                                <i class="icon-class-1"></i>
-                              </div>`;
-        container2.innerHTML = '<div class="drop"></div>';
+        <img src="img.jpg" alt="Image 1" />
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <span>Text</span>
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <i class="icon-class-1">icon</i>
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <img src="img.jpg" alt="Image 1" />
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <span>Text</span>
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <i class="icon-class-1">icon</i>
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <img src="img.jpg" alt="Image 1" />
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <span>Text</span>
+      </div>
+      <div class="item" draggable="true" ondragstart="drag(event)">
+        <i class="icon-class-1">icon</i>
+      </div>`;
+        container2.innerHTML = '<div class="drop"></div>Drop here';
         container2.classList.remove("success");
       }
