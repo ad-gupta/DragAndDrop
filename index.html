@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drag And Drop App</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="cont">
+      <h1 id="dad">Drag And Drop</h1>
+
+      <div class="container">
+        <div id="container1" class="container">
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <img src="img.jpg" alt="Image 1" />
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <span>Text</span>
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <i class="icon-class-1">icon</i>
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <img src="img.jpg" alt="Image 1" />
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <span>Text</span>
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <i class="icon-class-1">icon</i>
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <img src="img.jpg" alt="Image 1" />
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <span>Text</span>
+          </div>
+          <div class="item" draggable="true" ondragstart="drag(event)">
+            <i class="icon-class-1">icon</i>
+          </div>
+          
+        </div>
+        <div
+          id="container2"
+          class="container"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <div class="drop"></div>
+          Drop here
+        </div>
+      </div>
+      <div>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
